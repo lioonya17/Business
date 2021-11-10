@@ -1,0 +1,86 @@
+.card {
+    padding: 57px 0 48px;
+    &__title {
+        margin-bottom: 30px;
+        font-size: 25px;
+        font-family: $lato-l;
+        color: #818b95;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        text-align: center;
+        color: $orange;
+        font-size: 60px;
+        font-family: $lato-b;
+        text-transform: uppercase;
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+    &__subtitle {
+        font-family: $lato-l;
+        text-align: center;
+        color: #818b95;
+    }
+
+    &__list {
+        margin: 34px;
+    }
+
+    &__text {
+        text-align: center;
+        color: #b5bbc1;
+        font-family: $lato-r;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 40px;
+
+        &:before {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 300px;
+            height: 1px;
+            background-color:#e2e9f0;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        background-color: $orange;
+        color: $white;
+        font-family: $lato-r;
+        text-transform: uppercase;
+        padding: 16px 21px;
+    }
+
+    &.active {
+        transform: scale(1.1,1.1);
+        background-color: $blue;
+        .card__title {
+            color: $white;
+        }
+        .card__price {
+            color: $white;
+            span {
+                color: $white;
+            }
+        }
+        .card__subtitle {
+            color: $white;
+        }
+        .card__text {
+            color: #c2e1ff;
+
+            &::before {
+                background-color: #8eb8e2;
+            }
+        }
+    }
+}

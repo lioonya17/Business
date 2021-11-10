@@ -1,0 +1,52 @@
+.about {
+    width: 100%;
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__left {
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__right {
+        padding: 160px 80px 160px 80px;
+        background-color: #ffc155;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        color: $white;
+        font-size: 13px;
+        line-height: 24px;
+
+        margin-bottom: 33px;
+    }
+
+    &__btn {
+        padding: 18px 32px;
+        background-color: transparent;
+        border: 1px solid #e7ad48;
+        color: $white;
+        font-family: $lato-r;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: all .2s linear;
+
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            background-color: $white;
+            color: #000;
+        }
+    }
+}

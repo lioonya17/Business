@@ -1,0 +1,44 @@
+.form {
+    display: flex;
+    margin-top: 33px;
+    padding-bottom: 347px;
+    justify-content: center;
+
+    &__item {
+        position: relative;
+
+        i {
+            position: absolute;
+            left: 20px;
+            top: 21px;
+            color: #6e6e6e;
+        }
+    }
+
+    &__input {
+        display: inline-block;
+        padding: 18px 15px 18px 41px;
+        margin: 0 5px;  
+
+        &--n {
+            border: 1px solid #cbcbcb;
+        }
+        
+        &:focus {
+            outline: 0;
+        }
+
+        &::placeholder {
+            color: #a9a9a9;
+            font-size: 13px;
+        }
+    }
+
+    &__btn {
+        margin: 0 5px;
+        padding: 17px 45px;
+        background-color: $orange;
+        color: $white;
+        text-transform: uppercase;
+    }
+}

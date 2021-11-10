@@ -1,0 +1,48 @@
+.works {
+    padding-top: 155px;
+    &__header {
+        margin-bottom: 110px;
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 90px;
+    }
+
+    &__col {
+        position: relative;
+        width: 25%;
+        margin: 0 43.5px;
+
+        &:first-child {
+            margin: 0 43.5px 0 0;
+        }
+        &:last-child {
+            margin: 0 0 0 43.5px;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            background: url('/img/arrow-right-solid.svg') no-repeat;
+            width: 50px;
+            height: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 100%;
+        }
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        padding: 18px 27px;
+        background-color: $orange;
+        color: $white;
+        font-size: 14px;
+        font-family: $lato-r;
+        text-transform: uppercase;
+        margin-bottom: 150px;
+    }
+}

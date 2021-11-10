@@ -1,0 +1,14 @@
+.laptop {
+    &__photo {
+        display: flex;
+        justify-content: center;
+        margin: -300px auto 140px;
+    }
+
+    &__image {
+        display: block;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+}

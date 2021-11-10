@@ -1,0 +1,17 @@
+.service {
+    &__title {
+        font-family: $lato-r;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $primary-b;
+        margin-bottom: 21px;
+    }
+
+    &__text {
+        color: $secondary-g;
+        font-size: 13px;
+        line-height: 22px;
+    }
+}

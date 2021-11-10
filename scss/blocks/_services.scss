@@ -1,0 +1,28 @@
+.services {
+    
+    &__header {
+    margin-bottom: 93px;
+    }   
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 100px;
+        margin-bottom: 155px;
+    }
+
+    &__col {
+        &-r {
+            margin-left: 40px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 80px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
